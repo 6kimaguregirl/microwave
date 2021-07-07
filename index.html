@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--Waves Container-->
+        <div class="header">
+           <div class="wave-svg">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+            </div>
+            <div class="title">
+                <h1>MICROWAVE CHEAT SHEET</h1>
+            </div>
+        </div>
+        <!--Waves end-->
+    </header>
+    <div class="wrapper">
+        <div class="microwave">
+            <div class="flex">
+                <div class="mw-big  mw-big1">
+                    <div class="mw1-bar"></div>
+                    <div class="mw1-content">
+                        <h2>加熱時間</h2>
+                        <p class="message">600W 5分</p>
+                        <p class="message">700W 20秒</p>
+                        <p class="message">500W 2分</p>
+                        <p class="message">600W 2分</p>
+                        <p class="message">700W 3分</p>
+                        <p class="message">600W 1.5～2分</p>
+                        <p class="message">500W 1.3分</p>
+                        <p class="message">600W 20～30秒</p>
+                        <p class="message">600W 1.5分</p>
+                        <p class="message">600W 1.5～2分</p>
+                    </div>
+                </div>
+                <div class="mw-big  mw-big2">
+                    <div class="mw2-time"></div>
+                    <div class="flex flex-between">
+                        <div class="mw2-btn1"></div>
+                        <div class="mw2-btn1"></div>
+                    </div>
+                    <div class="flex flex-between">
+                        <div class="mw2-btn2"></div>
+                        <div class="mw2-btn2"></div>
+                    </div>
+                    <div class="mw2-btn3"></div>
+                    <div class="mw2-btn4"></div>
+                    <div class="flex flex-between2">
+                        <div class="mw2-btn5"></div>
+                        <div class="mw2-btn5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="touch">
+            <div class="flex">
+                <label for="food1">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food1" onclick="clickFood1()">
+                        <img src="img/apple.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food2">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food2" onclick="clickFood2()">
+                        <img src="img/bread.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food3">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food3" onclick="clickFood3()">
+                        <img src="img/curry.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food4">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food4" onclick="clickFood4()">
+                        <img src="img/hanbagu.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food5">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food5" onclick="clickFood5()">
+                        <img src="img/kabocha.png" alt="" class="foodimg">
+                    </div>
+                </label>
+            </div>
+            <div class="flex">
+                <label for="food6">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food6" onclick="clickFood6()">
+                        <img src="img/korokke.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food7">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food7" onclick="clickFood7()">
+                        <img src="img/nikuman.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food8">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food8" onclick="clickFood8()">
+                        <img src="img/onigiri.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food9">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food9" onclick="clickFood9()">
+                        <img src="img/syumai.png" alt="" class="foodimg">
+                    </div>
+                </label>
+                <label for="food10">
+                    <div class="food-btn">
+                        <input class="checkbox" type="checkbox" id="food10" onclick="clickFood10()">
+                        <img src="img/soup.png" alt="" class="foodimg">
+                    </div>
+                </label>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        let foodBtn = $(".checkbox");
+        let foodImg = $(".foodimg");
+        let message = $(".message")
+
+        function resetCheck() {
+            for (let i = 0; i < foodBtn.length; i++) {
+                $(foodBtn[i]).prop("checked", false);
+            }
+        }
+
+        function resetImg() {
+            for (let i = 0; i < foodImg.length; i++) {
+                $(foodImg[i]).css("background-color", "rgba(255,255,255,0.85)")
+            }
+        }
+
+        function resetMessage() {
+            for (let i = 0; i < message.length; i++) {
+                $(message[i]).css("display", "none");
+            }
+        }
+
+        function clickFood1() {
+            if (document.getElementById('food1').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[0]).prop("checked", true);
+                $(foodImg[0]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[0]).css("display", "block");
+
+            } else {
+                $(message[0]).css("display", "none");
+            }
+        }
+
+        function clickFood2() {
+            if (document.getElementById('food2').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[1]).prop("checked", true);
+                $(foodImg[1]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[1]).css("display", "block");
+
+            } else {
+                $(message[1]).css("display", "none");
+            }
+        }
+
+        function clickFood3() {
+            if (document.getElementById('food3').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[2]).prop("checked", true);
+                $(foodImg[2]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[2]).css("display", "block");
+
+            } else {
+                $(message[2]).css("display", "none");
+            }
+        }
+
+        function clickFood4() {
+            if (document.getElementById('food4').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[3]).prop("checked", true);
+                $(foodImg[3]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[3]).css("display", "block");
+
+            } else {
+                $(message[3]).css("display", "none");
+            }
+        }
+
+        function clickFood5() {
+            if (document.getElementById('food5').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[4]).prop("checked", true);
+                $(foodImg[4]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[4]).css("display", "block");
+
+            } else {
+                $(message[4]).css("display", "none");
+            }
+        }
+
+        function clickFood6() {
+            if (document.getElementById('food6').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[5]).prop("checked", true);
+                $(foodImg[5]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[5]).css("display", "block");
+
+            } else {
+                $(message[5]).css("display", "none");
+            }
+        }
+
+        function clickFood7() {
+            if (document.getElementById('food7').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[6]).prop("checked", true);
+                $(foodImg[6]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[6]).css("display", "block");
+
+            } else {
+                $(message[6]).css("display", "none");
+            }
+        }
+
+        function clickFood8() {
+            if (document.getElementById('food8').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[7]).prop("checked", true);
+                $(foodImg[7]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[7]).css("display", "block");
+
+            } else {
+                $(message[7]).css("display", "none");
+            }
+        }
+
+        function clickFood9() {
+            if (document.getElementById('food9').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[8]).prop("checked", true);
+                $(foodImg[8]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[8]).css("display", "block");
+
+            } else {
+                $(message[8]).css("display", "none");
+            }
+        }
+
+        function clickFood10() {
+            if (document.getElementById('food10').checked) {
+                resetCheck();
+                resetImg();
+                $(foodBtn[9]).prop("checked", true);
+                $(foodImg[9]).css("background-color", "#AAAFC6");
+                resetMessage();
+                $(message[9]).css("display", "block");
+
+            } else {
+                $(message[9]).css("display", "none");
+            }
+        }
+    </script>
+</body></html>

@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color1: #AAAFC6;
+    --color2: #fff3ed;
+    --color3: #9DC8C8;
+    --color4: #519D9E;
+    --color5: #A593E0;
+    --color5: #788592;
+    --color6: #F4C02E;
+    --color7: #9DC8C8;
+    --color8:#FFFDFC;
+    --border0: solid 2px var(--color5);
+    --border1: dotted 3px var(--color6);
+    --border2: solid 2px var(--color2);
+}
+
+body{
+    background-color: var(--color2);
+}
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.header{
+    height: 100px;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);   
+}
+
+.wave-svg{
+    position: absolute;
+    width: 100vw;
+    transform: rotate(180deg);
+}
+
+header h1{
+    text-align: center;
+    margin: 30px 0px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 36px;
+    color: var(--color4);
+    border-bottom:var(--border1);
+}
+
+
+
+
+.microwave {
+    margin: 50px auto;
+    width: 510px;
+}
+
+.mw-big {
+    background-color: var(--color1);
+    height: 280px;
+    border: var(--border0);
+}
+
+.mw-big1 {
+    width: 400px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.mw1-bar {
+    background-color: var(--color8);
+    width: 350px;
+    height: 30px;
+    margin: 20px auto;
+    border: var(--border0);
+}
+
+.mw1-content {
+    background-color: var(--color8);
+    width: 310px;
+    height: 180px;
+    margin: 20px auto;
+    border: var(--border0);
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.mw1-content h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mw1-content p {
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    display: none;
+}
+
+.mw-big2 {
+    width: 100px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.mw2-time {
+    width: 80%;
+    height: 50px;
+    margin: 20px auto 5px;
+    background-color: var(--color3);
+    border: var(--border0);
+}
+
+.mw-big2 .flex-between {
+    margin: 10%;
+}
+
+.mw-big2 .flex-between2 {
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+
+.mw2-btn1 {
+    background-color: var(--color4);
+    width: 40%;
+    height: 25px;
+    border: var(--border0)
+}
+
+.mw2-btn2 {
+    width: 40%;
+    height: 25px;
+    border: var(--border2);
+}
+
+.mw2-btn3 {
+    width: 80%;
+    height: 25px;
+    border: var(--border2);
+    margin: 0 auto;
+}
+
+.mw2-btn4 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-color: var(--color6);
+}
+
+.mw2-btn5 {
+    width: 20%;
+    height: 10px;
+    border: var(--border2);
+}
+
+.touch {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.touch img {
+    border: var(--border0);
+    background-color: var(--color8);
+    border-radius: 15px;
+    width: 150px;
+    margin: 20px;
+}
+
+.food-btn {
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.food-btn:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.touch input[type="checkbox"] {
+    display: none;
+}
+
+.touch input[type="checkbox"]:checked{
+    background-color: var(--color1);
+}
+
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color:#fff;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
